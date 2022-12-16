@@ -126,7 +126,6 @@ def validar_email():
   return email
 
 
-
 def validar_code_animal(): 
   while True:
     codigo = input('> Crie um Código de 6 dígitos: ').strip()
@@ -138,12 +137,10 @@ def validar_code_animal():
       return codigo
 
 
-
 def validar_sexo():
   while True:
     sexo = input('> Sexo [M/F]: ')[0].strip().upper()
     if (sexo == 'M') or (sexo == 'F'):
-      return sexo
-      break      
+      return sexo     
     else:
       print('Sexo inválido!')
